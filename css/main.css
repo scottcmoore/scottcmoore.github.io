@@ -4,6 +4,15 @@
 /*
 /*****************************************************************************/
 
+/* Theme colors */
+/*
+#04BFBF
+#CAFCD8
+#F7E967
+#A9CF54
+#588F27
+*/
+
 /* Global Reset */
 * {
   margin: 0;
@@ -13,8 +22,8 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
+  background-color: #CAFCD8;
+  font: 16px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
 }
@@ -34,19 +43,24 @@ a:visited { color: #a0a; }
 /* Home
 /*
 /*****************************************************************************/
+h1 {
+  font-size: 24px;
+  color: #04BFBF;
+}
+
 .posts {
   list-style-type: none;
   margin-bottom: 2em;
 }
 
 .posts li {
-  line-height: 1.75em;
+  line-height: 2em;
 }
 
 .posts span {
-  color: #aaa;
+  color: #004040;
   font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+  font-size: 100%;
 }
 
 /*****************************************************************************/
@@ -74,20 +88,20 @@ a:visited { color: #a0a; }
 }
 
 .title a {
-  color: #a00;
+  color: #014545;
 }
 
 .title a:hover {
-  color: #000;
+  color: #026969;
 }
 
 .header a.extra {
-  color: #aaa;
+  color: #014545;
   margin-left: 1em;
 }
 
 .header a.extra:hover {
-  color: #000;
+  color: #026969;
 }
 
 .meta {
@@ -95,9 +109,9 @@ a:visited { color: #a0a; }
 }
 
 .footer {
-  font-size: 80%;
+  font-size: 100%;
   color: #666;
-  border-top: 4px solid #eee;
+  border-top: 4px solid #04BFBF;
   margin-top: 2em;
   overflow: hidden;
 }
