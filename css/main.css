@@ -11,6 +11,7 @@
 #F7E967
 #A9CF54
 #588F27
+#D9DDFA // light blue background
 */
 
 /* Global Reset */
@@ -22,7 +23,7 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #CAFCD8;
+  background-color: #D9DDFA;
   font: 16px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
@@ -34,9 +35,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         { color: #04BFBF; }
+a:hover   { color: #026969; }
+a:visited { color: #588F27; }
 
 /*****************************************************************************/
 /*
@@ -105,12 +106,12 @@ h1 {
 }
 
 .meta {
-  color: #aaa;
+  color: #026969;
 }
 
 .footer {
   font-size: 100%;
-  color: #666;
+  color: #026969;
   border-top: 4px solid #04BFBF;
   margin-top: 2em;
   overflow: hidden;
@@ -121,9 +122,9 @@ h1 {
   margin-right: 3em;
 }
 
-.footer .contact a {
-  color: #8085C1;
-}
+.footer .contact a         { color: #04BFBF; }
+.footer .contact a:hover   { color: #026969; }
+.footer .contact a:visited { color: #588F27; }
 
 .footer .rss {
   margin-top: 1.1em;
