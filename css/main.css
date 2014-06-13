@@ -46,7 +46,12 @@ a:visited { color: #588F27; }
 /*****************************************************************************/
 h1 {
   font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
   color: #04BFBF;
+  margin-bottom: 15px;
 }
 
 .posts {
