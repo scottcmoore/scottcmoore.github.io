@@ -4,6 +4,15 @@ title: Projects | Software Developer, Santa Cruz CA, Scott C Moore
 ---
 <h1>Projects</h1>
 
+
+
+{% for projects in site.projects %}
+		<h3>{{ project.title }}</h3>
+		<div class="project">
+		{{ content }}			
+		</div>
+{% endfor %}
+
 <div class="post">
 <p>
 Here's a place to showcase my software projects. Until I can spend some time curating, check out my <a href="https://github.com/scottcmoore">GitHub repositories</a>.
