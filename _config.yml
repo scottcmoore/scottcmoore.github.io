@@ -1,3 +1,4 @@
 name: Scott C Moore
 markdown: redcarpet
 pygments: true
+permalink: /:categories/:title
