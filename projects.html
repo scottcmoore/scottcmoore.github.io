@@ -2,6 +2,7 @@
 layout: default
 title: Projects | Software Developer, Santa Cruz CA, Scott C Moore
 ---
+<link rel="stylesheet" href="/css/project.css">
 <h2>Projects</h2>
 
 {% for project in site.categories['projects']  %}
@@ -9,16 +10,16 @@ title: Projects | Software Developer, Santa Cruz CA, Scott C Moore
 		<div class="project">
 		{{ project.content }}		
 		</div>
+		<div class="screenshot">
+		<img src=images/{{ project.screenshot }} />
+		</div>
 		<div class="stack">
+		<h4>Technologies Used:</h4>
 		<ul>
 		{% for stackitem in project.stack %}
 		<li>{{ stackitem }}</li>
 		{% endfor %}
 		</ul>
-		</div>
-		<div class="screenshot">
-		<img src=images/{{ project.screenshot }}
-		/>	
 		</div>
 		<div class="testimonial">
 		</div>
