@@ -203,7 +203,7 @@ and (max-device-width : 480px) .site {
   font-size: 115%;
   text-align: justify;
   max-width: 62em;
-  margin: 3em auto 2em;
+  margin: 2em;
   line-height: 1.5em;
 }
 
@@ -214,7 +214,7 @@ and (min-width : 321px) .site {
   font-size: 115%;
   text-align: justify;
   max-width: 62em;
-  margin: 3em auto 2em;
+  margin: 2em;
   line-height: 1.5em;
 }
 
@@ -225,7 +225,7 @@ and (max-width : 320px) .site {
   font-size: 115%;
   text-align: justify;
   max-width: 62em;
-  margin: 3em auto 2em;
+  margin: 2em;
   line-height: 1.5em;
 }
 
@@ -237,7 +237,7 @@ and (max-device-width : 1024px) .site {
   font-size: 115%;
   text-align: justify;
   max-width: 62em;
-  margin: 3em auto 2em;
+  margin: 2em;
   line-height: 1.5em;
 }
 
@@ -344,6 +344,6 @@ and (-webkit-min-device-pixel-ratio : 2) .site {
   font-size: 115%;
   text-align: justify;
   max-width: 62em;
-  margin: 3em auto 2em;
+  margin: 2em;
   line-height: 1.5em;
 }
