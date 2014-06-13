@@ -11,7 +11,7 @@
 #F7E967 // banana yellow
 #A9CF54 // chartreuse
 #588F27 // vomit green
-#D9DDFA // periwinkle
+#FFFFFF // periwinkle
 */
 
 /* Global Reset */
@@ -23,7 +23,7 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #D9DDFA;
+  background-color: #FFFFFF;
   font: 16px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
