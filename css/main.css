@@ -106,6 +106,10 @@ h2 {
   border: 0;
 }
 
+.header {
+  margin: 2em auto 2em;
+}
+
 .header a {
   font-weight: bold;
   text-decoration: none;
@@ -193,40 +197,32 @@ h2 {
 /*
 /*****************************************************************************/
 
-V2
-
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 480px) .site {
-/*  Styles */
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 2em;
-  line-height: 1.5em;
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) .site {
-/*  Styles */
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 2em;
-  line-height: 1.5em;
+and (max-device-width : 480px) { 
+  .site {
+    font-size: 115%;
+    text-align: justify;
+    margin: 2em;
+    line-height: 1.5em;
+  }
+  .header {
+    margin: 3em auto 2em;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
-and (max-width : 320px) .site {
+and (max-width : 320px) {
+.site {
 /*  Styles */
   font-size: 115%;
   text-align: justify;
   max-width: 62em;
   margin: 2em;
   line-height: 1.5em;
+}
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -293,18 +289,7 @@ and (-webkit-min-device-pixel-ratio : 2) .site {
   font-size: 115%;
   text-align: justify;
   max-width: 62em;
-  margin: 2em;
-  line-height: 1.5em;
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) .site {
-/*  Styles */
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 2em;
+  margin: 3em auto 2em;
   line-height: 1.5em;
 }
 
@@ -314,36 +299,7 @@ and (min-width : 1824px) .site {
 /*  Styles */
   font-size: 115%;
   text-align: justify;
-  max-width: 62em;
-  margin: 2em;
-  line-height: 1.5em;
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px)
-and (orientation : landscape)
-and (-webkit-min-device-pixel-ratio : 2) .site {
-/*  Styles */
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 2em;
-  line-height: 1.5em;
-}
-
-@media
-only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px)
-and (orientation : portrait)
-and (-webkit-min-device-pixel-ratio : 2) .site {
-/*  Styles */
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 2em;
+  max-width: 82em;
+  margin: 3em auto 2em;
   line-height: 1.5em;
 }
