@@ -193,6 +193,38 @@ h2 {
 
 /*****************************************************************************/
 /*
+/* Projects page
+/*
+/*****************************************************************************/
+
+/* Project description */
+.project {
+
+}
+
+/* Project stack */
+.stack li {
+  list-style-type: none;
+}
+
+/* Project screenshot */
+.screenshot img {
+  outline: none;
+  border-color: #04BFBF;
+  box-shadow: 0 0 10px #04BFBF; 
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+
+/* Project testimonial */
+.testimonial {
+
+}
+
+
+/*****************************************************************************/
+/*
 /* Media Queries
 /*
 /*****************************************************************************/
@@ -210,25 +242,61 @@ and (max-device-width : 480px) {
   .header {
     margin: 3em auto 2em;
   }
+  .screenshot img {
+    max-width: 150px;
+  }
+  .title {
+    margin-bottom: 5px;
+  }
+  a.extra {
+    display: block;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
-and (max-width : 320px) {
-.site {
-/*  Styles */
+and (max-width : 320px)  {
+  .site {
+  /*  Styles */
   font-size: 115%;
   text-align: justify;
   max-width: 62em;
   margin: 2em;
   line-height: 1.5em;
 }
+  .screenshot img {
+    max-width: 150px;
+  }
+}
+
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 767px) { 
+  .site {
+    font-size: 115%;
+    text-align: justify;
+    margin: 2em;
+    line-height: 1.5em;
+  }
+  .header {
+    margin: 3em auto 2em;
+  }
+  .screenshot img {
+    max-width: 150px;
+  }
+  .title {
+    margin-bottom: 5px;
+  }
+  a.extra {
+    display: block;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px) .site {
+and (max-device-width : 1024px)  {
+  .site {
 /*  Styles */
   font-size: 115%;
   text-align: justify;
@@ -236,31 +304,44 @@ and (max-device-width : 1024px) .site {
   margin: 2em;
   line-height: 1.5em;
 }
-
+.screenshot img {
+  max-width: 300px;
+}
+}
 /* iPads (landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
-and (orientation : landscape) .site {
+and (orientation : landscape) {
+  .site {
 /*  Styles */
   font-size: 115%;
   text-align: justify;
   max-width: 62em;
   margin: 2em;
   line-height: 1.5em;
+}
+.screenshot img {
+  max-width: 300px;
+}
 }
 
 /* iPads (portrait) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
-and (orientation : portrait) .site {
+and (orientation : portrait) {
+  .site {
 /*  Styles */
   font-size: 115%;
   text-align: justify;
   max-width: 62em;
   margin: 2em;
   line-height: 1.5em;
+}
+.screenshot img {
+  max-width: 300px;
+}
 }
 /*********
 iPad 3
@@ -270,7 +351,7 @@ only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape)
-and (-webkit-min-device-pixel-ratio : 2) .site {
+and (-webkit-min-device-pixel-ratio : 2) {.site {
 /*  Styles */
   font-size: 115%;
   text-align: justify;
@@ -278,13 +359,17 @@ and (-webkit-min-device-pixel-ratio : 2) .site {
   margin: 2em;
   line-height: 1.5em;
 }
-
+.screenshot img {
+  max-width: 300px;
+}
+}
 @media
 only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait)
-and (-webkit-min-device-pixel-ratio : 2) .site {
+and (-webkit-min-device-pixel-ratio : 2) {
+  .site {
 /*  Styles */
   font-size: 115%;
   text-align: justify;
@@ -292,14 +377,35 @@ and (-webkit-min-device-pixel-ratio : 2) .site {
   margin: 3em auto 2em;
   line-height: 1.5em;
 }
-
+.screenshot img {
+  max-width: 300px;
+}
+}
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1025px) {
+.site {
+  font-size: 115%;
+  text-align: justify;
+  max-width: 62em;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+}
+.screenshot img {
+  max-width: 300px;
+}
+}
 /* Large screens ----------- */
 @media only screen 
-and (min-width : 1824px) .site {
-/*  Styles */
+and (min-width : 1824px) {
+  .site {
   font-size: 115%;
   text-align: justify;
   max-width: 82em;
   margin: 3em auto 2em;
   line-height: 1.5em;
+}
+.screenshot img {
+  max-width: 300px;
+}
 }
