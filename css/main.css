@@ -70,9 +70,10 @@ h2 {
 }
 
 .footer {
-  font-size: 100%;
-  color: #026969;
   border-top: 4px solid #04BFBF;
+  clear: both;
+  color: #026969;
+  font-size: 100%;
   margin-top: 2em;
   overflow: hidden;
 }
@@ -80,6 +81,10 @@ h2 {
 .footer .contact {
   float: left;
   margin-right: 3em;
+}
+
+.footer .social {
+  float: right;
 }
 
 .footer .contact a         { color: #04BFBF; }
