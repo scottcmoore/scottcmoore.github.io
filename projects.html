@@ -16,7 +16,12 @@ title: Projects | Software Developer, Santa Cruz CA, Scott C Moore
 		<h4>Technologies Used:</h4>
 		<ul>
 		{% for stackitem in project.stack %}
-		<li>{{ stackitem }}</li>
+		<li>
+		
+		<div class="stack_item_name">
+			<img class="stack_item_image" src=images/{{ stackitem.image }} />
+		{{ stackitem.name }}</div>
+		</li>
 		{% endfor %}
 		</ul>
 		</div>

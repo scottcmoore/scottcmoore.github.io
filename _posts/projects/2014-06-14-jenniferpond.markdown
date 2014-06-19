@@ -4,9 +4,9 @@ title: jenniferpond.com
 categories:
 - projects
 stack:
-- wordpress
-- html
-- css
+- {name: WordPress, image: wordpress.png}
+- {name: HTML, image: html.png}
+- {name: CSS, image: css.png}
 screenshot: jenniferpond_screenshot.png
 ---
 

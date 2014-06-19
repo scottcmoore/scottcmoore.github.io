@@ -204,8 +204,25 @@ h2 {
 .stack li {
   list-style-type: none;
   display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
+.stack h4 {
+  margin-bottom: 15px;
+}
+.stack_item_image {
+  margin-left:auto;
+  margin-right: auto;
+  width: 45px;
+  margin-bottom:5px;
+  display: block;
+}
+.stack_item_name {
+  display: block;
+  width: 125px;
+}
 
 /* Project screenshot */
 .screenshot {
