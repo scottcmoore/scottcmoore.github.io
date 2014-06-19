@@ -192,15 +192,25 @@ h2 {
 
 /* Project description */
 .project {
-
+  float: left;
+  max-width: 500px;
 }
 
 /* Project stack */
-.stack li {
-  list-style-type: none;
+.stack {
+  clear:both;
 }
 
+.stack li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+
 /* Project screenshot */
+.screenshot {
+  float: right;
+}
 .screenshot img {
   border-color: #04BFBF;
   border-radius: 10px;
