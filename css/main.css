@@ -22,14 +22,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+  h1 { margin-bottom: 1em; }
+  p { margin: 1em 0; }
 
-a         { color: #04BFBF; }
-a:hover   { color: #026969; }
-a:visited { color: #588F27; }
+  a         { color: #04BFBF; }
+  a:hover   { color: #026969; }
+  a:visited { color: #588F27; }
 
-/*****************************************************************************/
+  /*****************************************************************************/
 /*
 /* Home
 /*
@@ -39,8 +39,8 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
   color: #04BFBF;
+  font-size: 22px;
   margin-bottom: 15px;
 }
 
@@ -83,18 +83,16 @@ h2 {
   margin-right: 3em;
 }
 
-.footer .social {
-  float: right;
-}
+.footer .social { float: right; }
 
 .footer .contact a         { color: #04BFBF; }
 .footer .contact a:hover   { color: #026969; }
 .footer .contact a:visited { color: #588F27; }
 
 .footer .rss {
+  float: right;
   margin-top: 1.1em;
   margin-right: -.2em;
-  float: right;
 }
 
 .footer .rss img {
@@ -129,10 +127,10 @@ h2 {
 
 .site {
   font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 3em auto 2em;
   line-height: 1.5em;
+  margin: 3em auto 2em;
+  max-width: 62em;
+  text-align: justify;
 }
 
 .title {
@@ -156,8 +154,8 @@ h2 {
 
 /* standard */
 .post pre {
-  border: 1px solid #ddd;
   background-color: #eef;
+  border: 1px solid #ddd;
   padding: 0 .4em;
 }
 
@@ -166,8 +164,8 @@ h2 {
 }
 
 .post code {
-  border: 1px solid #ddd;
   background-color: #eef;
+  border: 1px solid #ddd;
   padding: 0 .2em;
 }
 
@@ -177,8 +175,8 @@ h2 {
 
 /* terminal */
 .post pre.terminal {
-  border: 1px solid #000;
   background-color: #333;
+  border: 1px solid #000;
   color: #FFF;
 }
 
@@ -204,11 +202,11 @@ h2 {
 
 /* Project screenshot */
 .screenshot img {
-  outline: none;
   border-color: #04BFBF;
-  box-shadow: 0 0 10px #04BFBF; 
   border-radius: 10px;
+  box-shadow: 0 0 10px #04BFBF; 
   max-width: 300px;
+  outline: none;
 }
 
 
@@ -230,38 +228,28 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) { 
   .site {
     font-size: 115%;
-    text-align: justify;
-    margin: 2em;
     line-height: 1.5em;
+    margin: 2em;
+    text-align: justify;
   }
-  .header {
-    margin: 3em auto 2em;
-  }
-  .screenshot img {
-    max-width: 150px;
-  }
-  .title {
-    margin-bottom: 5px;
-  }
-  a.extra {
-    display: block;
-  }
+  .header { margin: 3em auto 2em; }
+  .screenshot img { max-width: 150px; }
+  .title { margin-bottom: 5px; }
+  a.extra { display: block; }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px)  {
   .site {
-  /*  Styles */
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 2em;
-  line-height: 1.5em;
-}
-  .screenshot img {
-    max-width: 150px;
+    /*  Styles */
+    font-size: 115%;
+    line-height: 1.5em;
+    margin: 2em;
+    max-width: 62em;
+    text-align: justify;
   }
+  .screenshot img { max-width: 150px; }
 }
 
 @media only screen 
@@ -269,22 +257,14 @@ and (min-device-width : 481px)
 and (max-device-width : 767px) { 
   .site {
     font-size: 115%;
-    text-align: justify;
-    margin: 2em;
     line-height: 1.5em;
+    margin: 2em;
+    text-align: justify;
   }
-  .header {
-    margin: 3em auto 2em;
-  }
-  .screenshot img {
-    max-width: 150px;
-  }
-  .title {
-    margin-bottom: 5px;
-  }
-  a.extra {
-    display: block;
-  }
+  .header { margin: 3em auto 2em; }
+  .screenshot img { max-width: 150px; }
+  .title { margin-bottom: 5px; }
+  a.extra { display: block; }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -292,16 +272,14 @@ and (max-device-width : 767px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
   .site {
-/*  Styles */
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 2em;
-  line-height: 1.5em;
-}
-.screenshot img {
-  max-width: 300px;
-}
+    /*  Styles */
+    font-size: 115%;
+    line-height: 1.5em;
+    margin: 2em;
+    max-width: 62em;
+    text-align: justify;
+  }
+  .screenshot img { max-width: 300px; }
 }
 /* iPads (landscape) ----------- */
 @media only screen 
@@ -309,16 +287,14 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
   .site {
-/*  Styles */
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 2em;
-  line-height: 1.5em;
-}
-.screenshot img {
-  max-width: 300px;
-}
+    /*  Styles */
+    font-size: 115%;
+    line-height: 1.5em;
+    margin: 2em;
+    max-width: 62em;
+    text-align: justify;
+  }
+  .screenshot img { max-width: 300px; }
 }
 
 /* iPads (portrait) ----------- */
@@ -327,16 +303,14 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
   .site {
-/*  Styles */
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 2em;
-  line-height: 1.5em;
-}
-.screenshot img {
-  max-width: 300px;
-}
+    /*  Styles */
+    font-size: 115%;
+    line-height: 1.5em;
+    margin: 2em;
+    max-width: 62em;
+    text-align: justify;
+  }
+  .screenshot img { max-width: 300px; }
 }
 /*********
 iPad 3
@@ -347,16 +321,14 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio : 2) {.site {
-/*  Styles */
+  /*  Styles */
   font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 2em;
   line-height: 1.5em;
+  margin: 2em;
+  max-width: 62em;
+  text-align: justify;
 }
-.screenshot img {
-  max-width: 300px;
-}
+  .screenshot img { max-width: 300px; }
 }
 @media
 only screen
@@ -365,42 +337,36 @@ and (max-device-width : 1024px)
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio : 2) {
   .site {
-/*  Styles */
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-.screenshot img {
-  max-width: 300px;
-}
+    /*  Styles */
+    font-size: 115%;
+    line-height: 1.5em;
+    margin: 3em auto 2em;
+    max-width: 62em;
+    text-align: justify;
+  }
+  .screenshot img { max-width: 300px; }
 }
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1025px) {
-.site {
-  font-size: 115%;
-  text-align: justify;
-  max-width: 62em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-.screenshot img {
-  max-width: 300px;
-}
+  .site {
+    font-size: 115%;
+    line-height: 1.5em;
+    margin: 3em auto 2em;
+    max-width: 62em;
+    text-align: justify;
+  }
+  .screenshot img { max-width: 300px; }
 }
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
   .site {
-  font-size: 115%;
-  text-align: justify;
-  max-width: 82em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-.screenshot img {
-  max-width: 300px;
-}
+    font-size: 115%;
+    line-height: 1.5em;
+    margin: 3em auto 2em;
+    max-width: 82em;
+    text-align: justify;
+  }
+  .screenshot img { max-width: 300px; }
 }
