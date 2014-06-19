@@ -5,12 +5,12 @@ title: Projects | Software Developer, Santa Cruz CA, Scott C Moore
 <h2>Projects</h2>
 
 {% for project in site.categories['projects']  %}
-		<a href={{ project.url }} ><h3>{{ project.title }}</h3></a>
+		<a href={{ project.address }} ><h3>{{ project.title }}</h3></a>
 		<div class="project">
 		{{ project.content }}		
 		</div>
 		<div class="screenshot">
-		<a href={{ project.url }}>
+		<a href={{ project.address }}>
 		<img src=images/{{ project.screenshot }} />
 		</a>
 		</div>
@@ -18,12 +18,12 @@ title: Projects | Software Developer, Santa Cruz CA, Scott C Moore
 		<h4>Technologies Used:</h4>
 		<ul>
 		{% for stackitem in project.stack %}
-		<li>
-		
-		<div class="stack_item_name">
-			<img class="stack_item_image" src=images/{{ stackitem.image }} />
-		{{ stackitem.name }}</div>
-		</li>
+			<li>
+				<div class="stack_item_name">
+					<img class="stack_item_image" src=images/{{ stackitem.image }} />
+					{{ stackitem.name }}
+				</div>
+			</li>
 		{% endfor %}
 		</ul>
 		</div>
