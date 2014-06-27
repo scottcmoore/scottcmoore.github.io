@@ -1,6 +1,6 @@
 ---
 layout: project
-title: jenniferpond.com
+title: Jennifer Pond
 categories:
 - projects
 stack:
