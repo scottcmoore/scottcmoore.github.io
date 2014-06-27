@@ -1,0 +1,14 @@
+---
+layout: project
+title: Santa Cruz Junior Cycling Composite (In Progress)
+categories:
+- projects
+stack:
+- {name: WordPress, image: wordpress.png}
+- {name: HTML, image: html.png}
+- {name: CSS, image: css.png}
+screenshot: scjcc_screenshot.jpg
+
+---
+
+WordPress site for local high school mountain bike team. Currently in the design phase. This project will ultimately encompass a custom WordPress theme, and integration with the team's Facebook page.
