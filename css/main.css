@@ -144,12 +144,16 @@ h2 {
   width: 125px;
 }
 
-.testimonial {
+hr.project_divider {
+  border-top: none;
+  border-left: none;
+  border-right: none;
   border-bottom: 4px solid #04BFBF;
   margin-bottom: 50px;
   padding-bottom: 25px;
 }
-:last-of-type.testimonial {
+hr:last-of-type {
+
   border-bottom: none;
   margin-bottom: 0px;
   padding-bottom: 0px;
