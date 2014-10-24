@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Santa Cruz Junior Cycling Composite (In Progress)
+title: Santa Cruz Junior Development
 categories:
 - projects
 stack:
 - {name: WordPress, image: wordpress.png}
 - {name: HTML, image: html.png}
 - {name: CSS, image: css.png}
-screenshot: scjcc_screenshot.jpg
-
+screenshot: scjd_screenshot.png
+address: http://www.santacruzjuniordevelopment.org
 ---
 
-WordPress site for local high school mountain bike team. Currently in the design phase with <a href="http://www.meganmelack.com/">Megan Melack</a>. This project will ultimately encompass a custom WordPress theme, and integration with the team's Facebook page.
+WordPress site for Santa Cruz high school mountain bike team. Design by <a href="http://www.meganmelack.com">Megan Melack</a>. I handled theme customization and Facebook integration.
