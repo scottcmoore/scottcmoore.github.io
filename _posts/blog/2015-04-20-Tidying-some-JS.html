@@ -1,0 +1,84 @@
+---
+layout: post
+title: Tidying some JS
+categories:
+- blog
+---
+<p>Digging through some lovely CRUD code recently, I found a nice place to do a little tidying.
+</p><p>
+Most of our work at the RRTC is building database-backed web apps for data collection and reporting. This means a lot of web forms, usually hefty ones. To make the long forms less daunting, we split them up with <a href="http://https://jqueryui.com/tabs/">jQuery UI's tab widget</a>.
+</p><p>
+Recently I inherited some code that seemed to embody the paradox of rushed coding.</p>
+<blockquote>I would have written a shorter letter, but I did not have the time.
+<cite>
+    Blaise Pascal
+</cite>
+</blockquote><p>
+Here was some JS written to allow users to switch tabs without scrolling back to the top:</p>
+<pre>var $tabs = $("#tabs").tabs({
+          active: 0
+    });
+$('#gotocontact').click(function() {
+    $tabs.tabs('select', 0);
+    window.scrollTo(0, 0);
+    return false;
+});
+$('#gotodemo').click(function() {
+    $tabs.tabs('select', 1);
+    window.scrollTo(0, 0);
+    return false;
+});
+$('#gotoprogram').click(function() {
+    $tabs.tabs('select', 2);
+    window.scrollTo(0, 0);
+    return false;
+});
+$('#gotohistory').click(function() {
+    $tabs.tabs('select', 3);
+    window.scrollTo(0, 0);
+    return false;
+});
+$('#gotofinish').click(function() {
+    $tabs.tabs('select', 4);
+    window.scrollTo(0, 0);
+    return false;
+});
+</pre>
+<p>And at the bottom of each tab content file, we were adding in a set of buttons with IDs tied to these functions:</p>
+<pre><code>&lt;div class="button-container"&gt;
+    &lt;input type="button" class="btn" id="gotoprogram" value="<< Back" /&gt;
+    &lt;input type="button" class="btn" id="save4" value="Save" onclick="doSave('##results4');" /&gt;
+    &lt;input type="button" class="btn" id="gotofinish" value="Finish >>" /&gt;
+&lt;/div&gt;</code></pre>
+<p>
+Ouch. That there's some redundant code. Beyond the redundancy, another scary bit is the hardcoded references to the tab contents ('history', 'contact'). </p>
+<p>
+Yikes! If I get a request to change the tab order, or to add or remove a tab, I have to edit each of these references. Danger looms. As this code gets copied and pasted across multiple similar reporting applications, the opportunities for bugs start to spiral out of control. A few simple, elementary changes can nip this in the bud.
+</p><p>
+The first and easiest opportunity to make an improvement here is to refactor these functions into something more generally applicable:</p>
+<pre>// return the active tab's 0-based index
+function getTabIndex() {
+    return $("#tabs").tabs("option").active;
+}
+
+// increment active jQ tab index
+function tabForward() {
+    $("#tabs").tabs("option", "active",  getTabIndex() + 1);
+    window.scrollTo(0, 0);
+    return false;
+}
+
+// decrement active jQ tab index
+function tabBackward() {
+    $("#tabs").tabs("option", "active", getTabIndex() - 1);
+    window.scrollTo(0, 0);
+    return false;
+}</pre>
+Now that we've made these functions a little more abstract, we can do the same with our buttons:
+<pre><code>&lt;div class="button-container"&gt;
+        &lt;input type="button" class="btn" onclick="tabBackward()" value="<< Back" /&gt;
+        &lt;input type="button" class="btn" value="Save" onclick="doSave('##results2');" /&gt;
+        &lt;input type="button" class="btn" onclick="tabForward()" value="Continue >>" /&gt;
+    &lt;/div&gt;</code></pre>
+<p>Now that these button sets are the same across content tabs, the next step is to abstract them out so that any further changes can be made in a single place. Making small changes like this can help maintain some sanity across the codebase.</p>
+<p>One last thing -- I've refrained from using the term "refactoring" to describe what I'm doing here, although it may look similar. I don't think that it qualifies for the R-word, since in that case we would begin with writing tests to confirm that the code works, and check to make sure that our tests were passing after our changes. This time, I'm going to go about it all backwards because I want to devote a whole post to implementing simple JS testing -- stay tuned! In the meantime, if you have questions or comments, or something doesn't look correct, please hit me up at <a href="mailto:hello@scottcmoore.com">hello@scottcmoore.com</a>. Thanks!</p>
